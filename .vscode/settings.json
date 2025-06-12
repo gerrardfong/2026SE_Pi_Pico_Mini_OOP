@@ -24,5 +24,12 @@
     "~/.micropico-stubs/included",
     "./examples/smooth_"
   ],
-  "micropico.syncFolder": "project"
+  "micropico.syncFolder": "project",
+  "python-envs.pythonProjects": [
+    {
+      "path": "project/py_scripts/1.blink_led.py",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ]
 }
