@@ -1,7 +1,7 @@
 from machine import Pin
 from time import sleep, time 
 
-class led_light(Pin):
+class Led_Light(Pin):
     def __init__(self, pin, flashing = False, debug = False):
         super().__init__(pin, Pin.OUT)
         self.led_light_state
