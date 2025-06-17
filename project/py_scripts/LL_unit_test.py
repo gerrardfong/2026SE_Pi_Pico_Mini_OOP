@@ -3,7 +3,7 @@ from time import sleep, time
 
 self = Led_Light(3)
 
-def unit_test_on_off(self):
+def unit_test_on_off():
     # Turn on the light
     self.high()
     if self.value() == 1:
@@ -20,7 +20,7 @@ def unit_test_on_off(self):
     else:
         print("Something went wrong.")
 
-def unit_test_toggle(self):
+def unit_test_toggle():
     self.toggle()
     # Turn on LED
     if self.value == 1:
@@ -31,4 +31,8 @@ def unit_test_toggle(self):
         #Exception Statement
         print("Successfully toggled off")
 
-unit_test_toggle(self)
+def unit_test():
+    unit_test_on_off()
+    unit_test_toggle()
+
+unit_test()

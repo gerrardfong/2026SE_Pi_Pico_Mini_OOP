@@ -73,8 +73,4 @@ def unit_test():
         print("Button hasn't been pressed yet")
     sleep(1)
 
-
-
-
-
 unit_test()
