@@ -1,5 +1,5 @@
 from machine import Pin
-from time import ticks_ms, ticks_diff, sleep
+from time import sleep, time 
 
 
 
@@ -17,8 +17,8 @@ class Pedestrian_Button(Pin):
         self.irq(trigger=Pin.IRQ_RISING, handler=self.callback)
         
     def callback(self, pin):
-        current_time = ticks_ms() # Get that current time in milliseconds
-        if (ticks_diff(current_time, self.__last_pressed) > 200): # 200ms debounce delay
+        current_time = time.ticks_ms() # Get that current time in milliseconds
+        if (time.ticks_diff(current_time, self.__last_pressed) > 200): # 200ms debounce delay
             self.__last_pressed = current_time
             self.__pedestrian_waiting = True
             if self.__debug:
