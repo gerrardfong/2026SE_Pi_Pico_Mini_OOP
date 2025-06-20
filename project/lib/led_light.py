@@ -15,13 +15,11 @@ class Led_Light(Pin):
 
     def on(self):
         self.high()
-        if self.__debug:
-            print(f"LED connected to Pin {self.__pin} is {self.led_light_state} ")
+
 
     def off(self):
         self.low()
-        if self.__debug:
-            print(f"LED connected to Pin {self.__pin} is {self.led_light_state} ")
+
 
     def toggle(self):
         if self.value() == 0:
