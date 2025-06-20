@@ -3,7 +3,7 @@ from time import sleep, time
 from audio_notification import Audio_Notification
 
 
-class Led_Light(self, Pin):
+class Led_Light(Pin):
     def __init__(self, pin, flashing = False, debug = False):
         super().__init__(pin, Pin.OUT)
         self.led_light_state
@@ -45,6 +45,3 @@ class Led_Light(self, Pin):
         if self.__flashing and now - self.__last_toggle_time >= 0.5:
             self.toggle()
             self.__last_toggle_time = now
-
-Audio_Notification.beep(__, 1000, 500)
-
