@@ -49,7 +49,7 @@ class LedPico:
 
 
 def unit_test():
-    button = Pedestrian_Button(19, False)
+    button = Pedestrian_Button(12, False)
 
     print("Please press button.")
     sleep(3)

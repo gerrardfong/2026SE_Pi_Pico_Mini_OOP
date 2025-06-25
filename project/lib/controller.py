@@ -3,6 +3,8 @@ from audio_notification import Audio_Notification
 from pedestrian_button import Pedestrian_Button
 from time import sleep, time 
 
+
+
 class TrafficLightSubsystem:
     def __init__(self, red, amber, green, debug = False):
         self.__red = red
@@ -31,7 +33,7 @@ class TrafficLightSubsystem:
         self.__green.on()
         self.__amber.off()
 
-class PedestrianSubsystem():
+class PedestrianSubSystem():
     def __init__(self, red, green, button, buzzer, debug = False):
         self.__red = red
         self.__green = green
@@ -65,3 +67,7 @@ class PedestrianSubsystem():
     
     def reset_button(self):
         self.__button.button_state(False)
+
+    TrafficLightSubsystem()
+    sleep(10)
+    PedestrianSubSystem()

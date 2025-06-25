@@ -11,7 +11,7 @@ def unit_test_on_off():
         # After turning on the light print statement
         print("LED is on. ")
         sleep(1)
-    elif self.high() == True:
+    elif self.on() == True:
         # Check if light is on 
         self.off()
         # Print Exception Statement 

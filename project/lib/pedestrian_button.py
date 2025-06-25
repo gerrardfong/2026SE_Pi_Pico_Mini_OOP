@@ -6,7 +6,7 @@ from time import sleep, time
 
 class Pedestrian_Button(Pin):
 # child class inherits the parent 'Pin' class
-    def __init__(self, pin, debug = True):
+    def __init__(self, pin, debug = False):
         super().__init__(pin, Pin.IN, Pin.PULL_DOWN)
         self.__debug = debug
         self.__pin = pin
